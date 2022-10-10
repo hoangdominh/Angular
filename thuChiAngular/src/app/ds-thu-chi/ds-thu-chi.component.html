@@ -1,0 +1,10 @@
+<br>
+<h3>Danh sách thu chi</h3>
+<div class="row" *ngFor="let d of dsDoAn">
+  <div class="col-md-12">{{d | uppercase}}</div>
+</div>
+{{curDate | date:'fullDate' | lowercase}}
+<br/>
+{{n | currency:'VND'}}
+<br/>
+{{f | number: '3.1-4'}}
